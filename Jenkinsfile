@@ -28,13 +28,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // Clean up: Stop and remove the container after the pipeline finishes
-            script {
-                docker.image(DOCKER_IMAGE_NAME).stop()
-                docker.image(DOCKER_IMAGE_NAME).remove(force: true)
-            }
-        }
-    }
+   
 }
