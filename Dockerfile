@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Set the working directory in the container
-WORKDIR C:\Users\USER\Desktop\TT
+WORKDIR /app
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
